@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from './data.service';
-import { IMenuItem } from './interfaces/help-menu-item.interface';
+import { DataService } from './services/data.service';
+import { IMenuItem } from './libs/models/menu-item';
 
 @Component({
   selector: 'app-root',

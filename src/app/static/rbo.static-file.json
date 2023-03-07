@@ -1,0 +1,54 @@
+[
+  {
+    "id": "service-rbo-products",
+    "sensesShowWhen": "",
+    "translations": {
+      "en": {
+        "header": "Products"
+      },
+      "nl": {
+        "header": "Products em NL"
+      }
+    },
+    "menuItems": [
+      {
+        "id": "item-payment-and-savings-account",
+        "sensesShowWhen": "user:hasProduct_Payment;user:isCustomerType_Retail",
+        "type": "INTERNAL",
+        "routing": {
+          "path": "/service/betaal-en-spaarrekening"
+        },
+        "translations": {
+          "en": {
+            "header": "Payment and Savings Account",
+            "description": "Payment and Savings Account desc"
+          },
+          "nl": {
+            "header": "Payment and Savings Account em NL",
+            "description": "Payment and Savings Account desc em NL"
+          }
+        },
+        "menuItems": []
+      },
+      {
+        "id": "item-payment-and-savings-account-business",
+        "sensesShowWhen": "user:hasProduct_Payment;user:isCustomerType_Business",
+        "type": "INTERNAL",
+        "routing": {
+          "path": "/service/betaal-en-spaarrekening"
+        },
+        "translations": {
+          "en": {
+            "header": "Item Payment and Savings Account Business",
+            "description": "Item Payment and Savings Account Business desc"
+          },
+          "nl": {
+            "header": "Item Payment and Savings Account Business em NL",
+            "description": "Item Payment and Savings Account Business desc em NL"
+          }
+        },
+        "menuItems": []
+      }
+    ]
+  }
+]
