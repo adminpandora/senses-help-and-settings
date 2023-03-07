@@ -21,7 +21,7 @@ export class DataService {
 
   getStaticData(appType: string): Observable<IMenuItem[]> {
     const dataSource = (
-      appType == AppType.RBO ? rboData : rbbData
+      appType === AppType.RBO ? rboData : rbbData
     ) as IMenuItem[];
     return of(dataSource);
   }
