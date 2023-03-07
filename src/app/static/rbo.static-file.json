@@ -28,7 +28,41 @@
             "description": "Payment and Savings Account desc em NL"
           }
         },
-        "menuItems": []
+        "menuItems": [
+          {
+            "id": "service-rbo-limieten",
+            "sensesShowWhen": "",
+            "translations": {
+              "en": {
+                "header": "Limits"
+              },
+              "nl": {
+                "header": "Limieten"
+              }
+            },
+            "menuItems": [
+              {
+                "id": "item-Ondertekenmethode-bij-betalingen",
+                "sensesShowWhen": "user:isUser18OrOlder",
+                "type": "INTERNAL",
+                "routing": {
+                  "path": "/service/limiet-overboeken"
+                },
+                "translations": {
+                  "en": {
+                    "header": "Signing method in payments",
+                    "description": "Signing method in payments desc"
+                  },
+                  "nl": {
+                    "header": "Ondertekenmethode bij betalingen",
+                    "description": "Ondertekenmethode bij betalingen desc"
+                  }
+                },
+                "menuItems": []
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "item-payment-and-savings-account-business",
