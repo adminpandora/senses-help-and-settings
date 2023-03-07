@@ -1,14 +1,19 @@
+export enum AppType {
+  RBO = "RBO",
+  RBB = "RBB",
+}
+
 export enum ItemType {
-  Internal = 'INTERNAL',
-  External = 'EXTERNAL',
-  Download = 'DOWNLOAD',
-  ClickAction = 'CLICK_ACTION',
-  Relevance = 'RELEVANCE',
+  Internal = "INTERNAL",
+  External = "EXTERNAL",
+  Download = "DOWNLOAD",
+  ClickAction = "CLICK_ACTION",
+  Relevance = "RELEVANCE",
 }
 
 export enum IFileExtension {
-  PDF = 'pdf',
-  ZIP = 'zip',
+  PDF = "pdf",
+  ZIP = "zip",
 }
 
 export interface IFileURLs {
@@ -26,7 +31,7 @@ export interface ITranslation {
   nl: ITranslationData;
 }
 
-export interface ITranslationData { 
+export interface ITranslationData {
   header: string;
   description?: string;
 }
