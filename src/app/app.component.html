@@ -1,0 +1,12 @@
+<div *ngFor="let menuItem of menuItems">
+  <div>
+    <strong>
+      <p>{{ menuItem.id }}</p>
+    </strong>
+    <div *ngFor="let child of menuItem.menuItems">
+      <p>{{ child.id }}</p>
+    </div>
+  </div>
+</div>
+
+<pre>{{ menuItems | json }}</pre>
