@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { DataService } from "./services/data.service";
 import { AppType, IMenuItem } from "./libs/models/menu-item";
+import { ValidatorService } from "./services/validator.service";
 
 @Component({
   selector: "app-root",
@@ -11,9 +12,9 @@ export class AppComponent implements OnInit {
   title = "service";
   menuItems: IMenuItem[] = [];
 
-  constructor(private dataService: DataService) {}
+  constructor(private validatorService: ValidatorService) {}
   ngOnInit(): void {
-    this.dataService
+    this.validatorService
       .getData(AppType.RBO)
       .subscribe((menuItems: IMenuItem[]) => {
         this.menuItems = menuItems;

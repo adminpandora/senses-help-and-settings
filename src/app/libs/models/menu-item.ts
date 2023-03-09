@@ -27,7 +27,7 @@ export interface IIcons {
 }
 
 export interface ITranslation {
-  en: ITranslationData;
+  en?: ITranslationData;
   nl: ITranslationData;
 }
 
