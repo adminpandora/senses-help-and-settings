@@ -8,7 +8,7 @@ import { ValidatorService } from "./services/validator.service";
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule],
-  providers: [ValidatorService, DataService],
+  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

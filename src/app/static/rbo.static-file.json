@@ -3,10 +3,10 @@
     "id": "service-rbo-products",
     "sensesShowWhen": "",
     "translations": {
-      "en": {
+      "nl": {
         "header": "Products"
       },
-      "nl": {
+      "es": {
         "header": "Products em NL"
       }
     },
@@ -19,7 +19,7 @@
           "path": "/service/betaal-en-spaarrekening"
         },
         "translations": {
-          "en": {
+          "es": {
             "header": "Payment and Savings Account",
             "description": "Payment and Savings Account desc"
           },
@@ -33,7 +33,7 @@
             "id": "service-rbo-limieten",
             "sensesShowWhen": "",
             "translations": {
-              "en": {
+              "es": {
                 "header": "Limits"
               },
               "nl": {
@@ -46,7 +46,12 @@
                 "sensesShowWhen": "user:isUser18OrOlder",
                 "type": "INTERNAL",
                 "routing": {
-                  "path": "/service/limiet-overboeken"
+                  "path": "/service/limiet-overboeken",
+                  "urls": {
+                    "nl": "./fgfgfgf/scsddsds.pdf",
+                    "en":  "./xxxxxxxx/wwwww.pdf"
+                  }
+
                 },
                 "translations": {
                   "en": {

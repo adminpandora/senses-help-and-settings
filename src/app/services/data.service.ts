@@ -4,7 +4,9 @@ import { AppType, IMenuItem } from "../libs/models/menu-item";
 import rboData from "../static/rbo.static-file.json";
 import rbbData from "../static/rbb.static-file.json";
 
-@Injectable()
+@Injectable({
+  providedIn: "root",
+})
 export class DataService {
   constructor() {}
 

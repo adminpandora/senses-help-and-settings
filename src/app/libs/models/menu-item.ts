@@ -42,6 +42,7 @@ export interface IMenuItem {
   type?: ItemType;
   routing?: {
     path?: string;
+    urls?: IFileURLs;
     extension?: IFileExtension;
   };
   translations: ITranslation;

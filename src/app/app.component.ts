@@ -18,6 +18,7 @@ export class AppComponent implements OnInit {
       .getData(AppType.RBO)
       .subscribe((menuItems: IMenuItem[]) => {
         this.menuItems = menuItems;
+        console.log(this.menuItems);
       });
   }
 }
